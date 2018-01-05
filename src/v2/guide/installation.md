@@ -1,35 +1,35 @@
 ---
-title: Installation
+title: Kurulum
 type: guide
 order: 1
 vue_version: 2.5.13
 gz_size: "30.67"
 ---
 
-### Compatibility Note
+### Uyumluluk
 
-Vue does **not** support IE8 and below, because it uses ECMAScript 5 features that are un-shimmable in IE8. However it supports all [ECMAScript 5 compliant browsers](http://caniuse.com/#feat=es5).
+Vue IE8'i desteklememektedir, çünkü ECMAScript 5'i desteklememektedir. [ECMAScript 5 destekleyen tarayıcıları görmek için tıklayınız](http://caniuse.com/#feat=es5).
 
-### Release Notes
+### Sürüm Notları
 
-Latest stable version: {{vue_version}}
+Son Sürüm: {{vue_version}}
 
-Detailed release notes for each version are available on [GitHub](https://github.com/vuejs/vue/releases).
+Detaylı tüm kararlı sürümlere ve notlarına [GitHub](https://github.com/vuejs/vue/releases)'dan erişebilirsiniz.
 
 ## Vue Devtools
 
-When using Vue, we recommend also installing the [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools) in your browser, allowing you to inspect and debug your Vue applications in a more user-friendly interface.
+Vue kullanırken, tarayıcınızda [Vue Devtools](https://github.com/vuejs/vue-devtools#vue-devtools)'u kullanmanızı öneririz. Vue Devtools, Vue uygulamalarınızı incelemek ve debug edebilmek için kullanılan kullanıcı dostur bir arayüze sahiptir.
 
-## Direct `<script>` Include
+## Doğrudan `<script>` Tagı İle Kullanımı
 
-Simply download and include with a script tag. `Vue` will be registered as a global variable.
+Kolayca indirebilir ve script tagı ile kullanabilrisiniz. `Vue` global değişken olarak oluşturulacaktır.
 
-<p class="tip">Don't use the minified version during development. You will miss out on all the nice warnings for common mistakes!</p>
+<p class="tip">Minified(Yayın) versiyonunu geliştirme aşamasında kullanmayın. Minified versiyonunda hatalarınız için uyarıları göremezsiniz!</p>
 
 <div id="downloads">
-<a class="button" href="/js/vue.js" download>Development Version</a><span class="light info">With full warnings and debug mode</span>
+<a class="button" href="/js/vue.js" download>Geliştirme Versiyonu</a><span class="light info">Tüm uyarılar açık ve Debug modu.</span>
 
-<a class="button" href="/js/vue.min.js" download>Production Version</a><span class="light info">Warnings stripped, {{gz_size}}KB min+gzip</span>
+<a class="button" href="/js/vue.min.js" download>Yayın Versiyonu</a><span class="light info">Uyarılar kapalı, {{gz_size}}KB min+gzip</span>
 </div>
 
 ### CDN

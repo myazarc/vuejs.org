@@ -18,13 +18,23 @@
         Sponsor Ol
       </a>
       <h2>
-        <%-
-          type === 'api'
-            ? 'API'
-            : type === 'style-guide'
-              ? 'Yazım Standartları<sup class="beta">beta</sup>'
-              : (type.charAt(0).toUpperCase() + type.slice(1))
+        <%
+        var typeText;
+        if(type==='api'){
+          typeText='API';
+        }else if(type === 'guide'){
+          typeText='Kılavuz';
+        }else if(type === 'style-guide'){
+          typeText='Yazım Standartları<sup class="beta">beta</sup>';
+        }else if(type === 'cookbook'){
+          typeText='Öneriler';
+        }else if(type === 'examples'){
+          typeText='Örnekler';
+        }else{
+          typeText=type;
+        }
         %>
+        <%-typeText%>
         <% if (['cookbook', 'style-guide'].indexOf(type) === -1) { %>
           <select class="version-select">
             <option value="SELF" selected>2.x</option>
