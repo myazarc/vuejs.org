@@ -5,7 +5,7 @@
     </ul>
     <div class="list">
       <div class="main-sponsor">
-        <span>Platinum Sponsors</span>
+        <span>Platinum Sponsorlar</span>
         <div>
         <%_ for (const sponsor of theme.platinum_sponsors) {_%>
         <a href="<%- sponsor.url %>" target="_blank" class="logo">
@@ -15,14 +15,14 @@
         </div>
       </div>
       <a class="become-backer" href="<%- url_for("/support-vuejs") %>">
-        Become a Sponsor
+        Sponsor Ol
       </a>
       <h2>
         <%-
           type === 'api'
             ? 'API'
             : type === 'style-guide'
-              ? 'Style Guide<sup class="beta">beta</sup>'
+              ? 'Yazım Standartları<sup class="beta">beta</sup>'
               : (type.charAt(0).toUpperCase() + type.slice(1))
         %>
         <% if (['cookbook', 'style-guide'].indexOf(type) === -1) { %>
